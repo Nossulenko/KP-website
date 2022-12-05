@@ -23,18 +23,19 @@ const FooterTwo = () => {
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div className="inner text-center">
+                       {/* <div className="inner text-center">
                             <ul className="social-share rn-lg-size d-flex justify-content-center liststyle">
                                 {SocialShare.map((val , i) => (
                                     <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> 
+                                */}
                     </div>
                     <div className="col-lg-4 col-md-12 col-sm-12 col-12">
                         <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
                             <div className="text">
-                                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                                <p>Copyright © 2022 Kaizen Projects.</p>
                             </div>
                         </div>
                     </div>

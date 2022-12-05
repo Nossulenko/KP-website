@@ -1,37 +1,38 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiCode, FiBriefcase, FiCast , FiLayers , FiUsers , FiMonitor, FiSmartphone, FiActivity, FiFigma, FiEdit2 } from "react-icons/fi";
 
 const ServiceList = [
+   
     {
-        icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <FiCode />,
+        title: 'Custom application development',
+        description: 'Custom software development services for small and medium sized businesses.'
     },
     {
-        icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: < FiMonitor/>,
+        title: 'Web development',
+        description: 'Custom website development services for small and medium sized businesses.'
+    },
+    {
+        icon: < FiSmartphone/>,
+        title: 'Mobile application development',
+        description: 'Support for all your software development needs.'
+    },
+    {
+        icon: <FiActivity />,
+        title: 'Software Testing & QA',
+        description: 'Support for all your software development needs.'
+    },
+    {
+        icon: <FiEdit2 />,
+        title: 'UI/UX Design',
+        description: 'Support for all your software development needs.'
     },
     {
         icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        title: 'Dedicated Development Team',
+        description: 'Support for all your software development needs.'
     },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    }
 ]
 
 

@@ -81,7 +81,7 @@ function ContactForm({props}) {
             </div>
 
             <div className="rn-form-group">
-                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit Now</button>
+                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Send</button>
             </div> 
 
             <div className="rn-form-group">

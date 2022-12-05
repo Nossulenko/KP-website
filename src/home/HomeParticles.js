@@ -16,13 +16,16 @@ import FooterTwo from "../component/footer/FooterTwo";
 import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
 
+
+
+
 const SlideList = [
     {
         textPosition: 'text-center',
         category: '',
-        title: 'Creative One Page',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
+        title: 'Think digital act human',
+        description: 'Custom Product & Software Development Focused On Your Success',
+        buttonText: '',
         buttonLink: '/contact'
     }
 ]
@@ -103,7 +106,7 @@ class HomeParticles extends Component{
         
         return(
             <Fragment>
-                <Helmet pageTitle="Kaizen Agency" />
+                <Helmet pageTitle="Kaizen Projects" />
 
                 {/* Start Header Area  */}
                 <header className="header-area formobile-menu header--fixed default-color">
@@ -112,7 +115,7 @@ class HomeParticles extends Component{
                             <div className="logo">
                                 <a href="/">
                                     <img className="logo-1" src="/assets/images/logo/logo-light.png" alt="Logo Images"/>
-                                    <img className="logo-2" src="/assets/images/logo/logo-light.png" alt="Logo Images"/>
+                                    <img className="logo-2" src="/assets/images/logo/logo-dark.png" alt="Logo Images"/>
                                 </a>
                             </div>
                         </div>
@@ -121,14 +124,14 @@ class HomeParticles extends Component{
                                 <Scrollspy className="mainmenu" items={['home','service', 'about', 'portfolio','team','testimonial','blog', 'contact']} currentClassName="is-current" offset={-200}>
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#service">Service</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                   {/* <li><a href="#about">About</a></li>
+                                    <li><a href="#case studies">Portfolio</a></li>*/}
+                        
                                 </Scrollspy>
                             </nav>
                             <div className="header-btn">
-                                <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-                                    <span>lets talk</span>
+                                <a className="rn-btn" href="#contact">
+                                    <span>Contact</span>
                                 </a>
                             </div>
                             {/* Start Humberger Menu  */}
@@ -148,7 +151,11 @@ class HomeParticles extends Component{
                 
                 <div className="slider-activation slider-creative-agency with-particles" id="home">
                     <div className="frame-layout__particles">
-                        <Particles className="particle"  
+                    
+
+                        
+
+                         <Particles className="particle"  
                             options={{
                                 style:{
                                     position: "absolute"
@@ -170,65 +177,65 @@ class HomeParticles extends Component{
                                 modes: {
                                     bubble: {
                                         distance: 100,
-                                        duration: 2,
+                                        duration: 0,
                                         opacity: 0.8,
-                                        size: 10,
-                                        color: "#888",
+                                        size: 30,
+                                        color: "#0BDA51",
                                     },
                                     push: {
                                     quantity: 4,
                                     },
-                                    repulse: {
+                                    /*repulse: {
                                         distance: 100,
                                         duration: 0.4,
                                         color: "#888",
-                                    },
+                                    },*/
                                 },
                                 },
                                 particles: {
                                 color: {
-                                    value: "#888",
-                                },
+                                    value: "#0BDA51",},
                                 links: {
-                                    color: "#888",
+                                    color: "#00A36C",
                                     distance: 150,
                                     enable: true,
-                                    opacity: 0.5,
-                                    width: 1,
+                                    opacity: 1.5,
+                                    width: 0.5,
                                 },
                                 collisions: {
                                     enable: true,
                                 },
                                 move: {
-                                    direction: "none",
+                                    direction: "random",
                                     enable: true,
                                     outMode: "bounce",
-                                    random: false,
-                                    speed: 6,
-                                    straight: false,
+                                    random: true,
+                                    speed: 2,
+                                    straight: true,
                                    
                                 },
                                 number: {
                                     density: {
                                         enable: true,
-                                        value_area: 2000,
+                                        value_area: 800,
                                     },
-                                    value: 80,
+                                    value: 90,
                                 },
                                 opacity: {
-                                    value: 0.5,
+                                    value: 0.1,
                                 },
                                 shape: {
-                                    type: "circle",
+                                    type: "",
                                 },
                                 size: {
                                     random: true,
                                     value: 5,
                                 },
                                 },
-                                detectRetina: true,
+                                detectRetina: false,
                             }}
-                        />
+                        /> 
+
                     </div>
                     <div className="bg_image">
                             {SlideList.map((value , index) => (
@@ -242,12 +249,26 @@ class HomeParticles extends Component{
                                                     {value.description ? <p className="description">{value.description}</p> : ''}
                                                     {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                                 </div>
+                                               
                                             </div>
+                                            
                                         </div>
+                                        
+                                                <div href="#contact" class="container_arrow">
+                                                    <div  class="chevron"></div>
+                                                    <div class="chevron"></div>
+                                                    <div class="chevron"></div>
+                                                
+                                                </div>
                                     </div>
+                                    
                                 </div>
                             ))}
+
+
                         </div>
+
+                        
                 </div>
                 {/* End Slider Area   */}
 
@@ -257,8 +278,9 @@ class HomeParticles extends Component{
                         <div className="row">
                             <div className="col-lg-6 col-12">
                                 <div className="section-title text-left mb--30">
-                                    <h2>Our Services</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">Our Services</h2>
+                                    <p>For over 10 years, we’ve partnered with companies of 
+                                        all sizes and industries to solve their most complex business problems..</p>
                                 </div>
                             </div>
                         </div>
@@ -276,85 +298,35 @@ class HomeParticles extends Component{
                     <div className="about-wrapper">
                         <div className="container">
                             <div className="row row--35 align-items-center">
-                                <div className="col-lg-5">
+                                <div className="col-lg-3">
                                     <div className="thumbnail">
                                         <img className="w-100" src="/assets/images/about/about-3.jpg" alt="About Images"/>
                                     </div>
+                                   
                                 </div>
+                                
                                 <div className="col-lg-7">
                                     <div className="about-inner inner">
                                         <div className="section-title">
                                             <h2 className="title">About Us</h2>
-                                            <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#alteration">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p>
+                                            <p className="description">Ukrainians make up the majority of Kaizen Projects workforce, an IT company. As you are aware, Ukraine is one of the leading countries in software development, our people have extensive education, training, and experience. Belgian resident and team leader Nikolai serves as the CEO. Therefore, what you see is just the top of what you receive. You actually have a whole "ICT team as a service" at your service.</p>
                                         </div>
-                                        <div className="row mt--30">
-                                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                                <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                                <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                            </div>
                 {/* End About Area */}
 
                 {/* Start Portfolio Area */}
-                <div className="portfolio-area pt--120 pb--140 bg_color--1" id="portfolio">
-                    <div className="rn-slick-dot">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="section-title service-style--3 text-left mb--15 mb_sm--0">
-                                        <h2 className="title">Our Portfolio</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="slick-space-gutter--15 slickdot--20">
-                                        <Slider {...slickDot}>
-                                            {list.map((value , index) => (
-                                                <div className="portfolio" key={index}>
-                                                    <div className="thumbnail-inner">
-                                                        <div className={`thumbnail ${value.image}`}></div>
-                                                        <div className={`bg-blr-image ${value.image}`}></div>
-                                                    </div>
-                                                    <div className="content">
-                                                        <div className="inner">
-                                                            <p>{value.category}</p>
-                                                            <h4><a href="/portfolio-details">{value.title}</a></h4>
-                                                            <div className="portfolio-button">
-                                                                <a className="rn-btn" href="/portfolio-details">Case Study</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <Link className="link-overlay" to="/portfolio-details"></Link>
-                                                </div>
-                                            ))}
-                                        </Slider>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
                 {/* End Portfolio Area */}
 
 
                 {/* Start CounterUp Area */}
-                <div className="rn-counterup-area pt--140 p pb--110 bg_color--5">
+               {/*  <div className="rn-counterup-area pt--140 p pb--110 bg_color--5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -369,12 +341,12 @@ class HomeParticles extends Component{
                 {/* End CounterUp Area */}
 
                 {/* Start Team Area  */}
-                <div className="rn-team-area ptb--120 bg_color--1" id="team">
+               {/*  <div className="rn-team-area ptb--120 bg_color--1" id="team">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="section-title service-style--3 text-left mb--25 mb_sm--0">
-                                    <h2 className="title">Skilled Team</h2>
+                                    <h2 className="title">Our Stack</h2>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                                 </div>
                             </div>
@@ -383,11 +355,11 @@ class HomeParticles extends Component{
                             <Team column="col-lg-4 col-md-6 col-sm-6 col-12" />
                         </div>
                     </div>
-                </div>
+                </div>*/}
                 {/* End Team Area  */}
 
                 {/* Start Testimonial Area */}
-                <div className="rn-testimonial-area bg_color--5 ptb--120" id="testimonial">
+               {/*  <div className="rn-testimonial-area bg_color--5 ptb--120" id="testimonial">
                     <div className="container">
                         <Testimonial />
                     </div>
@@ -396,7 +368,7 @@ class HomeParticles extends Component{
                 
 
                 {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 pb--140 bg_color--1" id="blog">
+               {/*  <div className="rn-blog-area pt--120 pb--140 bg_color--1" id="blog">
                     <div className="container">
                         <div className="row align-items-end">
                             <div className="col-lg-6">
@@ -429,18 +401,18 @@ class HomeParticles extends Component{
                             </div>
                         </div>    
                     </div>    
-                </div>
+                </div>*/}
                 {/* End Blog Area */}
 
                 {/* Start Contact Us */}
-                <div className="rn-contact-us ptb--120 bg_color--5" id="contact">
+                <div className="rn-contact-us ptb--120 bg_color--1" id="contact">
                     <Contact />
                 </div>
                 {/* End Contact Us */}
 
 
                 {/* Start Brand Area */}
-                <div className="rn-brand-area bg_color--1 ptb--120">
+               {/*  <div className="rn-brand-area bg_color--1 ptb--120">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">

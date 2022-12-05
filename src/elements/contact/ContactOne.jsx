@@ -31,7 +31,7 @@ class ContactOne extends Component{
                                             id="item01"
                                             value={this.state.rnName}
                                             onChange={(e)=>{this.setState({rnName: e.target.value});}}
-                                            placeholder="Your Name *"
+                                            placeholder="Your Nae *"
                                         />
                                     </label>
 
