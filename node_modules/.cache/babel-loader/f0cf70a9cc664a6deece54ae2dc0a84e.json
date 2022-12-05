@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class LineDrawer {\n  getSidesCount() {\n    return 1;\n  }\n\n  draw(context, particle, radius) {\n    context.moveTo(-radius / 2, 0);\n    context.lineTo(radius / 2, 0);\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

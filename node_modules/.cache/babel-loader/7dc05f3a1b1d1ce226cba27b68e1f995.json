@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class PolygonMaskInline {\n  constructor() {\n    this.arrangement = \"one-per-point\";\n  }\n\n  load(data) {\n    if (!data) {\n      return;\n    }\n\n    if (data.arrangement !== undefined) {\n      this.arrangement = data.arrangement;\n    }\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

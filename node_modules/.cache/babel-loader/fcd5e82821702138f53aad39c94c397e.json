@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class ConnectLinks {\n  constructor() {\n    this.opacity = 0.5;\n  }\n\n  load(data) {\n    if (!(data !== undefined && data.opacity !== undefined)) {\n      return;\n    }\n\n    this.opacity = data.opacity;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

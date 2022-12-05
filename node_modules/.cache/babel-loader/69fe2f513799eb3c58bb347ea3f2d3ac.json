@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Range {\n  constructor(x, y) {\n    this.position = {\n      x: x,\n      y: y\n    };\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

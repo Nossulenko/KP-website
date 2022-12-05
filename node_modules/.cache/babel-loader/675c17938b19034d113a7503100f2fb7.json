@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class ParticlesInteractorBase {\n  constructor(container) {\n    this.container = container;\n    this.type = 1;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

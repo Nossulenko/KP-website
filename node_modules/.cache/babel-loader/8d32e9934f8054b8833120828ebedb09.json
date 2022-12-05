@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { ValueWithRandom } from \"../../ValueWithRandom\";\nexport class SplitFactor extends ValueWithRandom {\n  constructor() {\n    super();\n    this.value = 3;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

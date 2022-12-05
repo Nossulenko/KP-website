@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Point {\n  constructor(position, particle) {\n    this.position = position;\n    this.particle = particle;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

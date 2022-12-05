@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Bounce {\n  constructor() {\n    this.distance = 200;\n  }\n\n  load(data) {\n    if (!data) {\n      return;\n    }\n\n    if (data.distance !== undefined) {\n      this.distance = data.distance;\n    }\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
