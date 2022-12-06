@@ -106,7 +106,7 @@ class HomeParticles extends Component{
         
         return(
             <Fragment>
-                <Helmet pageTitle="Kaizen Projects" />
+                <Helmet pageTitle="KP"/>
 
                 {/* Start Header Area  */}
                 <header className="header-area formobile-menu header--fixed default-color">
