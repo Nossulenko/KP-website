@@ -106,7 +106,7 @@ class HomeParticles extends Component{
         
         return(
             <Fragment>
-                <Helmet pageTitle="KP"/>
+                <Helmet pageTitle="Kaizen Projects"/>
 
                 {/* Start Header Area  */}
                 <header className="header-area formobile-menu header--fixed default-color">
@@ -149,93 +149,98 @@ class HomeParticles extends Component{
 
                 {/* Start Slider Area   */}
                 
-                <div className="slider-activation slider-creative-agency with-particles" id="home">
-                    <div className="frame-layout__particles">
+                <div className="with-particles" id="home">
+
+                <Particles  className="particle"  
+
+                            
+                        options={{
+    
+                                 style:{
+                                
+                                     position: "absolute",
+                                     width: "100%",
+                                     height: "100%",
+                                 },
+                                 fpsLimit: 100,
+                                 interactivity: {
+                                 detectsOn: "canvas",
+                                 events: {
+                                     onClick: {
+                                     enable: true,
+                                     mode: "push",
+                                     },
+                                     onHover: {
+                                     enable: true,
+                                     mode: "repulse",
+                                     },
+                                     resize: true,
+                                 },
+                                 modes: {
+                                     bubble: {
+                                         distance: 100,
+                                         duration: 0,
+                                         opacity: 0.8,
+                                         size: 30,
+                                         color: "#0BDA51",
+                                     },
+                                     push: {
+                                     quantity: 4,
+                                     },
+                                     /*repulse: {
+                                         distance: 100,
+                                         duration: 0.4,
+                                         color: "#888",
+                                     },*/
+                                 },
+                                 },
+                                 particles: {
+                                     
+                                 color: {
+                                     value: "#0BDA51",},
+                                 links: {
+                                     color: "#00A36C",
+                                     distance: 150,
+                                     enable: true,
+                                     opacity: 1.5,
+                                     width: 0.5,
+                                 },
+                                 collisions: {
+                                     enable: true,
+                                 },
+                                 move: {
+                                     direction: "random",
+                                     enable: true,
+                                     outMode: "bounce",
+                                     random: true,
+                                     speed: 2,
+                                     straight: true,
+                                    
+                                 },
+                                 number: {
+                                     density: {
+                                         enable: true,
+                                         value_area: 800,
+                                     },
+                                     value: 90,
+                                 },
+                                 opacity: {
+                                     value: 0.1,
+                                 },
+                                 shape: {
+                                     type: "",
+                                 },
+                                 size: {
+                                     random: true,
+                                     value: 5,
+                                 },
+                                 },
+                                 detectRetina: false,
+                                }}
+                                /> 
+
+                    <div className="frame-layout__particles" id="particles-js">
                     
-
-                        
-
-                         <Particles className="particle"  
-                            options={{
-                                style:{
-                                    position: "absolute"
-                                },
-                                fpsLimit: 100,
-                                interactivity: {
-                                detectsOn: "canvas",
-                                events: {
-                                    onClick: {
-                                    enable: true,
-                                    mode: "push",
-                                    },
-                                    onHover: {
-                                    enable: true,
-                                    mode: "repulse",
-                                    },
-                                    resize: true,
-                                },
-                                modes: {
-                                    bubble: {
-                                        distance: 100,
-                                        duration: 0,
-                                        opacity: 0.8,
-                                        size: 30,
-                                        color: "#0BDA51",
-                                    },
-                                    push: {
-                                    quantity: 4,
-                                    },
-                                    /*repulse: {
-                                        distance: 100,
-                                        duration: 0.4,
-                                        color: "#888",
-                                    },*/
-                                },
-                                },
-                                particles: {
-                                color: {
-                                    value: "#0BDA51",},
-                                links: {
-                                    color: "#00A36C",
-                                    distance: 150,
-                                    enable: true,
-                                    opacity: 1.5,
-                                    width: 0.5,
-                                },
-                                collisions: {
-                                    enable: true,
-                                },
-                                move: {
-                                    direction: "random",
-                                    enable: true,
-                                    outMode: "bounce",
-                                    random: true,
-                                    speed: 2,
-                                    straight: true,
-                                   
-                                },
-                                number: {
-                                    density: {
-                                        enable: true,
-                                        value_area: 800,
-                                    },
-                                    value: 90,
-                                },
-                                opacity: {
-                                    value: 0.1,
-                                },
-                                shape: {
-                                    type: "",
-                                },
-                                size: {
-                                    random: true,
-                                    value: 5,
-                                },
-                                },
-                                detectRetina: false,
-                            }}
-                        /> 
-
                     </div>
                     <div className="bg_image">
                             {SlideList.map((value , index) => (
@@ -317,6 +322,7 @@ class HomeParticles extends Component{
                             </div>
                         </div>
                     </div>
+                    
                             </div>
                 {/* End About Area */}
 
