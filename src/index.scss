@@ -8,6 +8,17 @@
 
 
 
+#contactContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.contactFormRow{
+  width: 45%;
+  min-width: 300px;
+ 
+}
+
   
   .container_arrow {
     position: relative;

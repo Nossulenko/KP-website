@@ -6,9 +6,9 @@ class ContactTwo extends Component {
         return(
             <div className="contact-form--1">
                 <div className="container">
-                    <div className="row row--35 align-items-start">
-                        <div className="col-lg-6 order-2 order-lg-1">
-                            <div className="section-title text-left mb--50">
+                    <div id="contactContainer" className="row">
+                        <div className="contactFormRow">
+                            <div className="section-title mb--50">
                                 <h2 className="title">Contact Us.</h2>
                                 <p className="description"></p>
                             </div>
@@ -16,9 +16,7 @@ class ContactTwo extends Component {
                                 <ContactForm />
                             </div>
                         </div>
-                        <div className="col-lg-6 order-1 order-lg-2">
-                            
-                        </div>
+                        
                     </div>
                 </div>
             </div>
