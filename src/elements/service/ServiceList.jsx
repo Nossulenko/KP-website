@@ -6,32 +6,32 @@ const ServiceList = [
     {
         icon: <FiCode />,
         title: 'Custom application development',
-        description: 'Custom software development services for small and medium sized businesses.'
+        description: 'Custom application development services provide strategy, transformation, implementation and management of any custom or packaged application, easing the burden on your IT resources.'
     },
     {
         icon: < FiMonitor/>,
-        title: 'Web development',
-        description: 'Custom website development services for small and medium sized businesses.'
+        title: 'Full-scale web development',
+        description: 'Custom website development services for small and medium sized businesses. We have rich experience and creativity in producing phenomenal websites and CMS development for different clients worldwide.'
     },
     {
         icon: < FiSmartphone/>,
         title: 'Mobile application development',
-        description: 'Support for all your software development needs.'
+        description: 'full-cycle mobile app development to fit your business domain and budget requirements'
     },
     {
         icon: <FiActivity />,
-        title: 'Software Testing & QA',
-        description: 'Support for all your software development needs.'
+        title: 'Full-cycle Testing & QA',
+        description: 'We offer quality assurance and software testing services for all software types, including any PPAs or custom developed software deployed to any environment.'
     },
     {
         icon: <FiEdit2 />,
         title: 'UI/UX Design',
-        description: 'Support for all your software development needs.'
+        description: 'We invest time in bringing order to your requirements and understanding what were about to design. With the help of our UI-UX services, this results in a simple and coherent product experience.'
     },
     {
         icon: <FiUsers />,
         title: 'Dedicated Development Team',
-        description: 'Support for all your software development needs.'
+        description: 'Our dedicated software development team follows the client’s corporate culture and rules, as well as adopts its existing methodologies, technical resources, and tools.'
     },
 ]
 
