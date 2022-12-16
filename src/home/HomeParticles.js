@@ -172,13 +172,12 @@ class HomeParticles extends Component{
                                      },
                                      onHover: {
                                      enable: true,
-                                     mode: "repulse",
                                      },
                                      resize: true,
                                  },
                                  modes: {
                                      bubble: {
-                                         distance: 100,
+                                         distance: 200,
                                          duration: 0,
                                          opacity: 0.8,
                                          size: 30,
@@ -187,11 +186,7 @@ class HomeParticles extends Component{
                                      push: {
                                      quantity: 4,
                                      },
-                                     /*repulse: {
-                                         distance: 100,
-                                         duration: 0.4,
-                                         color: "#888",
-                                     },*/
+                                    
                                  },
                                  },
                                  particles: {
@@ -202,7 +197,7 @@ class HomeParticles extends Component{
                                      color: "#00A36C",
                                      distance: 150,
                                      enable: true,
-                                     opacity: 1.5,
+                                     opacity: 0.7,
                                      width: 0.5,
                                  },
                                  collisions: {
@@ -213,26 +208,26 @@ class HomeParticles extends Component{
                                      enable: true,
                                      outMode: "bounce",
                                      random: true,
-                                     speed: 2,
+                                     speed: 0.4,
                                      straight: true,
                                     
                                  },
                                  number: {
                                      density: {
                                          enable: true,
-                                         value_area: 800,
+                                         value_area: 500,
                                      },
-                                     value: 90,
+                                     value: 70,
                                  },
                                  opacity: {
                                      value: 0.1,
                                  },
                                  shape: {
-                                     type: "",
+                                     type: "circle",
                                  },
                                  size: {
                                      random: true,
-                                     value: 5,
+                                     value: 4,
                                  },
                                  },
                                  detectRetina: false,
